@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.head {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.head__para {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+/* ✅ Image container */
+.image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  margin: 20px;
+}
+
+/* ✅ Each image card */
+.image1 {
+  width: 220px;
+  height: 450px;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for nice look */
+.image1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Image sizing consistent */
+.image1 img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.image1 h1 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.image1 p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* ✅ Button styling */
+.image1 button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.image1 button:hover {
+  background-color: orange;
+  color: black;
+}
+
+/* ✅ Contact section */
+.contact {
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact__title table {
+  margin: 0 auto;
+}
+
+.contact__title input {
+  padding: 5px;
+  width: 200px;
+}
+
+.contact__title button {
+  background-color: yellow;
+  color: black;
+  padding: 8px 40px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ✅ RESPONSIVE FIXES */
+@media (max-width: 768px) {
+  .image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image1 {
+    width: 80%; /* full width on mobile */
+    margin-bottom: 20px;
+  }
+
+  .image1 img {
+    height: 200px; /* equal image height for all */
+  }
+
+  .head__para {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
